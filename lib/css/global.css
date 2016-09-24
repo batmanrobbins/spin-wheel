@@ -1,0 +1,81 @@
+/* Other misc styles */
+p.noCanvasMsg {
+	color: white;
+}
+#spin_button {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	z-index: 99999;
+	-ms-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+html, body {
+	background: #000 url(../img/bg.jpg) center top no-repeat;
+}
+.modal-open {
+	overflow-y: auto;
+}
+#mainContent {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 100px;
+}
+h1 {
+	font-size: 1.5em;
+}
+.wheel_wrap {
+	margin-top: -100px;
+}
+.the_pin {
+	position: relative;
+	z-index: 100;
+	-ms-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.the_pin img {
+	max-width: 25%;
+}
+.the_wheel {
+	position: relative;
+	margin: -30px auto 20px auto;
+	z-index: 1;
+}
+.the_canvas {
+	width: 100%;
+	height: auto;
+	max-width: 480px;
+	background: #cea469 url(../img/wheel_back.png) center center no-repeat;
+	background-size:contain;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border:25px solid #cea469;
+	-webkit-box-shadow: 24px 25px 37px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 25px 37px -9px rgba(0,0,0,0.75);
+box-shadow: 24px 25px 37px -9px rgba(0,0,0,0.75);
+}
+@media screen and (max-width:768px) {
+.wheel_wrap {
+	margin-top: 0;
+}
+}
+ @media screen and (max-width:640px) {
+.the_pin {
+	margin-top: 15px;
+}
+.the_canvas {
+	margin-top: 1%;
+	border:5px solid #cea469;
+}
+}
+ @media screen and (max-width:480px) {
+}
+@media screen and (max-width:320px) {
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1, edge=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="lib/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="lib/css/animate.css" type="text/css" />
+<link rel="stylesheet" href="lib/css/global.css" type="text/css" />
+<!-- MS Clear Type -->
+<meta http-equiv="cleartype" content="on">
+<!-- Apple iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Win Wheel</title>
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="containerWrap">
+<div class="container">
+<div id="mainContent row">
+  <div class="col-sm-4 col-sm-offset-7">
+  <img src="lib/img/headline.png" alt="Slice of Victory" class="img-responsive center-block animated bounceIn"/>
+  <img src="lib/img/button.png" id="spin_button" alt="Spin" class="img-responsive center-block animated fadeInUp" onClick="startSpin();"/>
+  </div>
+  <div class="wheel_wrap col-sm-12">
+  <div align="center" class=" col-sm-12 the_pin animated bounceInDown">
+  <img src="lib/img/pin.png" alt="Win Pin" class="img-responsive center-block"/>
+  </div>
+  <div align="center" class=" col-sm-12 the_wheel animated bounceIn">
+    <canvas class="the_canvas" id="myDrawingCanvas" width="450" height="450">
+      <p class="noCanvasMsg" align="center">Sorry, your browser doesn't support canvas.<br />
+        Please try another.</p>
+    </canvas>
+	</div>
+    </div>
+    <div class="modal fade" id="resultMsg">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title olTitle"></h4>
+      </div>
+      <div class="modal-body">
+        <p align="center"> <strong>You are not a winner this time, but you can come back tomorrow to play again!</strong> </p>
+<p align="center"> <em>(Call to Action to brand site, coupon, social channels, etc.)</em> </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="lib/js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="lib/js/all.js" type="text/javascript"></script>
+<script type='text/javascript' src="lib/js/winwheel_1.2.js"></script>
+<script>
+	// Call function to draw the wheel face at it's initial position.
+	begin();
+</script> 
+</div>
+</div>
+</div>
+</body>
+</html>
